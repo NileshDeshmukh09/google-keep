@@ -1,28 +1,31 @@
-import React from "react";
+// src/App.js
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Notes from "./pages/Notes";
 import Reminders from "./pages/Reminders";
-import EditLabels from "./pages/EditLabels";
+import NotesPage from "./pages/Notes/NotesPage";
 import Trash from "./pages/Trash";
+import EditLabels from "./pages/EditLabels";
+import SideBar from "./components/Sidebar/Sidebar";
+import Archieve from "./pages/Archieve";
 
-const App: React.FC = () => {
+function App() {
   return (
     <Router>
-      <div className="App">
-        <Sidebar />
-        <main className="content">
+      <div className="app-container">
+        <SideBar />
+        <div className="content-container">
           <Routes>
-            <Route path="/" element={<Notes />} />
+            <Route path="/" element={<NotesPage />} />
             <Route path="/reminders" element={<Reminders />} />
             <Route path="/edit-labels" element={<EditLabels />} />
+            <Route path="/archieve" element={<Archieve />} />
             <Route path="/trash" element={<Trash />} />
           </Routes>
-        </main>
+        </div>
       </div>
     </Router>
   );
-};
+}
 
 export default App;

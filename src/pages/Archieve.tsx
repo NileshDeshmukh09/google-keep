@@ -1,6 +1,6 @@
 import React from "react";
 
-const EditLabels: React.FC = () => {
+const Archieve: React.FC = () => {
   return (
     <div
       style={{
@@ -10,11 +10,10 @@ const EditLabels: React.FC = () => {
         fontFamily: "Roboto",
       }}
     >
-      <h1>EditLabels Page</h1>
-
+      <h1>Archieve Page</h1>
       <p>COMING SOON...</p>
     </div>
   );
 };
 
-export default EditLabels;
+export default Archieve;

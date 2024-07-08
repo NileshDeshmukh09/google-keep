@@ -1,0 +1,185 @@
+.NotesInput--main {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+ 
+}
+.NotesInput--main label {
+  cursor: pointer;
+}
+.input--container {
+  border: 1px solid rgb(239, 238, 238);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 0px 0px 0px rgb(61, 59, 59);
+  background-color: #202124;
+}
+.take-a-note {
+  height: 2.5rem;
+  width: 30rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background-color: #202124;
+  padding: 0 1rem;
+  color: #e8eaed;
+  font-family: "Roboto", sans-serif;
+}
+
+.NotesInput--main .title--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title--container::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #c5bfbf;
+  font-weight: 500;
+}
+
+.NotesInput--main .container-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+}
+.NotesInput--main .container-1 
+.inner-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.NotesInput--main .container-2 {
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.2rem;
+}
+
+.NotesInput--main .container-2 .input-field {
+  min-height: 2.5rem;
+  height: 100%;
+  width: 30rem;
+  border: none;
+  background-color: #202124;
+  padding: 0 1rem;
+  outline: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-field::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #e8eaed;
+  font-weight: 500;
+}
+
+
+.NotesInput--main .container-2 .input-action {
+  width: 1px;
+  padding: 0;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  opacity: 0;
+}
+
+
+.input--container div {
+  cursor: pointer;
+}
+.NotesInput--main .Notes-down-dash {
+  padding: 0 0rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.notes-left-side {
+  padding: 4px 12px;
+  display: flex;
+  gap: 1rem;
+}
+.notes-right-side {
+  padding: 4px 12px;
+  /* display: flex; */
+  /* gap: 1rem; */
+  background-color: transparent;
+  /* border: 1px solid white; */
+  border-radius: 8px;
+  color: #fff; 
+  cursor: pointer;
+}
+
+.notes-right-side:hover {
+  padding: 4px 12px;
+  /* display: flex; */
+  /* gap: 1rem; */
+  background-color: #242435;
+  /* border: 1px solid white; */
+  border-radius: 8px;
+  color: #fff; 
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .take-a-note {
+    width: 10rem;
+  }
+  .input--container {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .NotesInput--main .container-2 .input-field {
+    width: 14rem;
+    padding: 0;
+  }
+
+ 
+  .notes-left-side {
+    padding: 0rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  input {
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .NotesInput--main .Notes-down-dash {
+    padding: 0 0rem 1rem 0rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .take-a-note {
+    width: 10rem;
+  }
+  .input--container {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .NotesInput--main .container-2 .input-field {
+    width: 14rem;
+    padding: 0;
+  }
+  .notes-left-side {
+    padding: 0rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  input {
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .NotesInput--main .Notes-down-dash {
+    padding: 0 0rem 1rem 0rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}

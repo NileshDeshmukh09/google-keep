@@ -2,9 +2,9 @@ import React from "react";
 
 const Reminders: React.FC = () => {
   return (
-    <div>
+    <div style={{  marginTop: "5rem", textAlign: "center" ,color:"white", fontFamily:"Roboto"  }}> 
       <h1>Reminders Page</h1>
-      <p>Welcome to the Reminders page!</p>
+      <p>COMING SOON...</p>
     </div>
   );
 };

@@ -2,9 +2,16 @@ import React from "react";
 
 const Services: React.FC = () => {
   return (
-    <div>
+    <div
+      style={{
+        marginTop: "5rem",
+        textAlign: "center",
+        color: "white",
+        fontFamily: "Roboto",
+      }}
+    >
       <h1>Services Page</h1>
-      <p>These are our services.</p>
+      <p>COMING SOON...</p>
     </div>
   );
 };
