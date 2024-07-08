@@ -110,10 +110,9 @@
 }
 .notes-right-side {
   padding: 4px 12px;
-  /* display: flex; */
-  /* gap: 1rem; */
+
   background-color: transparent;
-  /* border: 1px solid white; */
+  font-family: "Roboto", sans-serif;
   border-radius: 8px;
   color: #fff; 
   cursor: pointer;
@@ -121,10 +120,7 @@
 
 .notes-right-side:hover {
   padding: 4px 12px;
-  /* display: flex; */
-  /* gap: 1rem; */
   background-color: #242435;
-  /* border: 1px solid white; */
   border-radius: 8px;
   color: #fff; 
   cursor: pointer;
